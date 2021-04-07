@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Quiz</title>
+
+    <!--    Styling for the webpage-->
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/abde2d5451.js" crossorigin="anonymous"></script>
+    <script defer src="game.js"></script>
+
+
+</head>
+<body>
+<div class="home-icon" style="font-size: 24px;">
+    <a href="../index.html"><i class="fas fa-home fa-lg"></i></a>
+    <!--    <a href="/users/edit"><i class="fa fa-cog" style="color:black !important;"></i> Edit profile</a>-->
+</div>
+
+<div class="container">
+    <div id="game" class="flex-center flex-column">
+        <div class="title-container">
+            <h1 class="title">Ready, Set, Play!</h1>
+        </div>
+        <p class="credit">Questions from OpenTriviaDB API</p>
+
+        <div class="process-btn">
+            <button class="btn" id="check-answer">Check Answer</button>
+            <button class="btn" id="next-question">Next Question</button>
+        </div>
+
+
+        <div class="specs">
+            <p class="specs-header" id="category"></p>
+            <p class="specs-header" id="difficulty"></p>
+
+        </div>
+
+        <div class="answer-choices">
+            <p class="specs-header question-header" id="question"></p>
+            <p class="choice" id="answer1"></p>
+            <p class="choice" id="answer2"></p>
+            <p class="choice" id="answer3"></p>
+            <p class="choice" id="answer4"></p>
+        </div>
+
+
+        <p class="correct-answer" id="correct-answer"></p>
+
+
+    </div>
+</div>
+
+<!--    Scripts for the webpage-->
+
+
+</body>
+</html>
